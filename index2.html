@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto Confidencial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f1f3f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #41a4e6;
+      color: #ffffff;
+      padding: 12px 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #212529;
+    }
+    .subtitle {
+      color: #6c757d;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .content {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #343a40;
+    }
+    #final1, #final2, #final3, #final4 {
+      display: none;
+    }
+    #final2 {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #e83e8c;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 18px;
+      background-color: #1f1f1f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #a8d3fd;
+    }
+  </style>
+  <script>
+    function mostrarFrase1() {
+      document.getElementById('final1').style.display = 'block';
+      document.getElementById('btnMostrar1').style.display = 'none';
+    }
+
+    function mostrarFrase2() {
+      document.getElementById('final2').style.display = 'block';
+      document.getElementById('btnMostrar2').style.display = 'none';
+    }
+
+    function mostrarFrase3() {
+      document.getElementById('final3').style.display = 'block';
+      document.getElementById('btnMostrar3').style.display = 'none';
+    }
+
+    function mostrarFrase4() {
+      document.getElementById('final4').style.display = 'block';
+      document.getElementById('btnMostrar4').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="header">
+    🚨 CONFIDENCIAL 🚨
+  </div>
+
+  <div class="container">
+    <div class="title">Plano</div>
+    <div class="subtitle">Documento reservado · 11/04/2025</div>
+    <div class="content">
+            Estudos recentes mostram que o consumo excessivo de vídeos curtos está diretamente ligado à perda de foco em interações pessoais. Dentre os aplicativos avaliados, um deles se destacou: TikTok.
+
+        <br><br>
+            A distração causada por esse aplicativo chegou a níveis preocupantes e com base nessa diretriz, foi criado o Projeto Confidencial.
+        <br><br>
+            Foi então que elaborei o Projeto Confidencial. Um plano para...
+      
+        <br><br>
+        <button class="btn" id="btnMostrar1" onclick="mostrarFrase1()">Clique se quiser continuar</button>
+
+        <div id="final1">
+            PRA NADA NÃO. É SÓ UMA SURPRESINHA...
+            <br>
+            <button class="btn" id="btnMostrar3" onclick="mostrarFrase3()">Continua que tu vai entender.😀</button>
+            <br>
+        
+            <div id="final3">
+                Desde a primeira vez que te vi naquela noite na Eco, em 18/11/2024, eu sabia que teríamos alguma coisa, 
+                mas me surpreendi com a velocidade que me envolvi em você. Me apaixonei não só fisicamente, mas principalmente 
+                pela tua história e por quem você é.
+                Desde então eu vi a minha rotina ficar mais leve, mais engraçada e definitivamente mais gostosa.
+
+                <br><br>
+                A gente se conheceu no improviso, no meio de música alta, cerveja, e agora dividimos o quarto e a rotina corrida.
+                Eu tô curtindo cada segundo disso tudo.
+
+                Fiz essa página aqui, simples, que me custou só algumas horas de uma noite.
+                <br>
+                Uma noite em que parei pra pensar e 
+                escrever o que essa relação da gente tem significado pra mim, e os momentos que quero que a gente ainda tenha.
+                <br>
+                É simples, mas é minha forma de demonstrar o meu carinho por você e que ao mesmo tempo fique marcado pra sempre,
+                que marque e relembre o início de tudo: os primeiros olhares trocados naquela noite, o primeiro beijo regado a cerveja,
+                o primeiro encontro a dois no Varanda, a primeira ida ao cinema juntos, o primeiro contato com seus amigos, 
+                o primeiro Carnaval juntos (te salvei de pegar sapinho), o seu primeiro contato com minha mãe e 
+                agora os preparativos para a primeira viagem juntos.
+                <br>
+                <button class="btn" id="btnMostrar4" onclick="mostrarFrase4()">Continua...</button>
+                <div id="final4"> 
+                    <br>
+                    Parece que foi ontem que a gente tava aqui no sofá conversando sobre nossas histórias; você contando sobre cada um dos seus ex's
+                    e eu me divertindo com os absurdos.
+                    <br>E lembra também que, enquanto você contava as suas desilusões amorosas, eu disse que tava na hora 
+                    da sua história ter um novo protagonista e um enredo feliz? Então...
+                
+                    <br>
+                    <button class="btn" id="btnMostrar2" onclick="mostrarFrase2()">Clique se quiser responder</button>
+
+                    <div id="final2">Quer namorar comigo, oficialmente e tornar essa a nossa data?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
