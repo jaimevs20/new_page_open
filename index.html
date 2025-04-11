@@ -83,14 +83,6 @@
     function mostrarFrase2() {
       document.getElementById('final2').style.display = 'block';
       document.getElementById('btnMostrar2').style.display = 'none';
-      setTimeout(() => {
-      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      // Fallback: força rolagem com scrollTop caso o anterior não funcione
-      setTimeout(() => {
-        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
-      }, 300);
-    }, 150);
     }
 
     function mostrarFrase3() {
@@ -109,14 +101,6 @@
     function mostrarFrase4() {
       document.getElementById('final4').style.display = 'block';
       document.getElementById('btnMostrar4').style.display = 'none';
-      setTimeout(() => {
-      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      // Fallback: força rolagem com scrollTop caso o anterior não funcione
-      setTimeout(() => {
-        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
-      }, 300);
-    }, 150);
     }
   </script>
 </head>
