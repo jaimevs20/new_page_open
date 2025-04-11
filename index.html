@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Confidencial</title>
+  <title>Confidencial</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,32 +71,52 @@
       document.getElementById('final1').style.display = 'block';
       document.getElementById('btnMostrar1').style.display = 'none';
       setTimeout(() => {
-        final1.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Fallback: força rolagem com scrollTop caso o anterior não funcione
+      setTimeout(() => {
+        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
+      }, 300);
+    }, 150);
     }
 
     function mostrarFrase2() {
       document.getElementById('final2').style.display = 'block';
       document.getElementById('btnMostrar2').style.display = 'none';
       setTimeout(() => {
-        final1.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Fallback: força rolagem com scrollTop caso o anterior não funcione
+      setTimeout(() => {
+        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
+      }, 300);
+    }, 150);
     }
 
     function mostrarFrase3() {
       document.getElementById('final3').style.display = 'block';
       document.getElementById('btnMostrar3').style.display = 'none';
       setTimeout(() => {
-        final1.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Fallback: força rolagem com scrollTop caso o anterior não funcione
+      setTimeout(() => {
+        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
+      }, 300);
+    }, 150);
     }
 
     function mostrarFrase4() {
       document.getElementById('final4').style.display = 'block';
       document.getElementById('btnMostrar4').style.display = 'none';
       setTimeout(() => {
-        final1.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      final1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Fallback: força rolagem com scrollTop caso o anterior não funcione
+      setTimeout(() => {
+        window.scrollTo({ top: final1.offsetTop, behavior: 'smooth' });
+      }, 300);
+    }, 150);
     }
   </script>
 </head>
